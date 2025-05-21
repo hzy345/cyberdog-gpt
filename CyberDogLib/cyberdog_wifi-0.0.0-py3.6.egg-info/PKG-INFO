@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cyberdog-wifi
+Version: 0.0.0
+Summary: Wifi ROS2 interface for Cyberdog.
+Home-page: UNKNOWN
+Author: dukun
+Author-email: dukun1@xiaomi.com
+Maintainer: wenlinfeng
+Maintainer-email: wenlinfeng@xiaomi.com
+License: Apache License, Version 2.0
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+
+UNKNOWN
+

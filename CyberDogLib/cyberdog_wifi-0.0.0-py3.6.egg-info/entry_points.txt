@@ -1,0 +1,3 @@
+[console_scripts]
+cyberdog_wifi = cyberdog_wifi.cyberdog_wifi:main
+

@@ -1,0 +1,45 @@
+cyberdog_gpt_demo:
+实现了语音纠错和向文心一言提问
+使用方式：
+在launch里更改data['text']内容，即可向文心一言提问，响应文件为respond.json
+
+文件功能及其结构
+launch.py：
+根据键入文本text生成data_incorrected.json文件,并依次执行TextCorrection.py和cyberdog_gpt文件
+
+data_incorrected.json:
+{
+    "text": 狗子识别的可能出错的文本
+    "emotion": -1~1  //负数表示消极整数表示消极，精确到百分位，相当于百分制
+    "action": //需要会长提供动作列表
+}
+
+TextCorrection.py:
+读入data_incorrected.json文件,基于讯飞大模型.更改text键值为正确文本,输出data_corrected.json文件
+
+data_corrected.json:
+{
+    "text": 纠正后的文本
+    "emotion": -1~1  //负数表示消极整数表示消极，精确到百分位，相当于百分制
+    "action": //需要会长提供动作列表
+}
+
+cyberdog_gpt.py:
+读入data_corrected.json文件,基于百度文心一言大模型,生成回复并写入respond.json文件
+
+respond.json
+功能：接受
+{
+    "text": 文心一言回复内容，
+    "emotion": -1~1  //负数表示消极整数表示消极，精确到百分位，相当于百分制
+    "action": //需要会长提供动作列表
+}
+
+WordlistUpload.py(暂未使用):
+黑白名单,可转换特定文本,比如捂汗----武汉,硬顶----樱顶,文心一言----cyberdoggpt,和prompt搭配生成更可靠的文本
+
+待添加功能:
+1 tts朗读
+2 prompt小样本微调模型(编写聊天记录,罗正刚)
+3 nlp语义情感分析(张澹潇)
+4 情感动作匹配(郭嘉鑫)

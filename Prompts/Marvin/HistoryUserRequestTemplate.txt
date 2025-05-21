@@ -1,0 +1,1 @@
+人类角色：“<asrText>”，铁蛋情感：<emotion>，铁蛋状态：<pos>

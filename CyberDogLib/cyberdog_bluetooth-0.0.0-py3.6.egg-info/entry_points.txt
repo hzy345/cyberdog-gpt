@@ -1,0 +1,3 @@
+[console_scripts]
+cyberdog_bluetooth_main = cyberdog_bluetooth.cyberdog_bluetooth_main:main
+
