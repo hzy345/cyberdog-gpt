@@ -1,3 +1,7 @@
+"""
+TTS_HTTP.py - 语音合成模块
+功能：调用字节跳动 TTS API 将文本转换为语音，生成 OGG 音频文件
+"""
 from intNodeInterface import interactionNodeInterface, CyberdogResponse
 import cyberdog_gpt
 # coding=utf-8

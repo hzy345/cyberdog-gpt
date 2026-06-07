@@ -1,0 +1,17 @@
+# Python 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 敏感文件
+api_keys.txt
+
+# 临时数据文件
+data_incorrected.json
+data_corrected.json
+respond.json
+test_submit.ogg
+
+# IDE 配置
+.vscode/
+.idea/

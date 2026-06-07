@@ -1,3 +1,7 @@
+"""
+cyberdog_gpt.py - GPT 对话核心模块
+功能：调用 OpenAI GPT API 生成对话回复，包含动作指令和情感状态
+"""
 import sys
 
 import intNodeInterface
@@ -9,7 +13,7 @@ import time
 import os
 from typing import List
 
-api_key = ""
+api_key = ""  # 从 api_keys.txt 随机读取
 
 DEFAULT_RESPONSE_ENABLED = False  # 设为True则会启用动作指令的默认替换
 MAXIMUM_HISTORY_CONVERSATION_ROUNDS = 5  # 这个变量定义了最多保存多少轮的用户与机器狗的对话。当超过时会精简以确保初始信息提示正确识别。

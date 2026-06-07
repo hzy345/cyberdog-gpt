@@ -1,3 +1,7 @@
+"""
+intNodeInterface.py - 交互节点接口定义
+功能：定义机器人与 GPT 交互的抽象接口
+"""
 from abc import ABC, abstractmethod
 
 
